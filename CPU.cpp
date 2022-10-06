@@ -127,8 +127,8 @@ bool CPU_move(char tab[10][10]) {
 				tab[A + 2][B + 2] = 'B';
 			}
 			if (X == 1) {
-				tab[A + 1][B + 1] = '#';
-				tab[A + 2][B + 2] = 'B';
+				tab[A + 1][B - 1] = '#';
+				tab[A + 2][B - 2] = 'B';
 			}
 		}
 		if (attack == false) {
@@ -137,7 +137,7 @@ bool CPU_move(char tab[10][10]) {
 				tab[A + 1][B + 1] = 'B';
 			}
 			if (X == 1) {
-				tab[A + 1][B + 1] = 'B';
+				tab[A + 1][B - 1] = 'B';
 			}
 		}
 		return false;
