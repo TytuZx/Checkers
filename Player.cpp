@@ -26,7 +26,13 @@ bool Player_move(char tab[10][10], string s) {
 		
 		while (true) {
 			pick_move_c = _getch();
-			pick_move_i = pick_move_c - '0';
+			//pick_move_i = pick_move_c - '0';
+			if (pick_move_c == '1' || pick_move_c == '2' || pick_move_c == '3' || pick_move_c == '4' || pick_move_c == '5' || pick_move_c == '6' || pick_move_c == '7' || pick_move_c == '8' || pick_move_c == '9') {
+				pick_move_i = pick_move_c - '0';
+			}
+			else {
+				pick_move_i = pick_move_c - 87;
+			}
 			if (pick_move_i <= move_array.size() && pick_move_i > 0) {
 				break;
 			}
