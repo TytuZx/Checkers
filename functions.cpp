@@ -84,6 +84,7 @@ void Draw_Board(char tab[10][10],bool king) { //drawing board
 	if (king == true) {
 		cout << " M - White King\n D - Black King" << endl;
 	}
+	cout << "numbers more than 9 --> A-F" << endl;
 	cout << endl;
 }
 
